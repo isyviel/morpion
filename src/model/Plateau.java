@@ -4,11 +4,13 @@ public class Plateau {
 
 
     private int mnombre_ligne;
-private int mnombre_ colomne;
+    private int mnombre_colonne;
 
 
 
-public Plateau (p Mnombre_ligne :int, p mnombre_colonne :string)
+public Plateau (int pnombre_ligne, int pnombre_colonne) {
+	
+};
 
 
 }

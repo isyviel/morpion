@@ -4,7 +4,7 @@ public class Case {
 
 	public int mnumero_ligneColonne;
 	
-	package Case()
+	public Case()
 	{
 		
 	};

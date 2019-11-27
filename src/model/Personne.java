@@ -2,17 +2,22 @@ package model;
 
 public  class Personne {
 
-    protected char msymboler;// l'attribut
-
-//methode abstracte
-public  jouer () {
-
-}
-//constructeur
-protected joueur ()
+    public String mname;
 
 
+    public char jouer() {
+    	return 'c';
+    };
 
-	public String m_name;
-	private jouer
+
+	public String getType() {
+		return "string";
+	}
+
+	public Personne(String pname,char psymbol)
+	{
+		
+	}
+
+	
 }

@@ -2,7 +2,7 @@ package model;
 
 public abstract class Joueurs {
 	
-	protected char m_symbol;
+	protected char msymbol;
 
 
 
