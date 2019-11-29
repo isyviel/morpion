@@ -4,13 +4,11 @@ public abstract class Joueurs {
 	
 	protected char msymbol;
 
-
-
-public abstract char jouer();
-
-protected Joueurs()
-{
+	public abstract char jouer();
 	
-}
+	protected Joueurs()
+	{
+		
+	}
 
 }
