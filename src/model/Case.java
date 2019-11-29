@@ -15,8 +15,8 @@ public class Case {
 	
 	public Case()
 	{
-		m_position_x = Plateau.get(j);
-		m_position_y = Plateau.get(i);
+		//m_position_x = Plateau.get(j);
+		//m_position_y = Plateau.get(i);
 	};   
 	
 	

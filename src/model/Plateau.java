@@ -9,12 +9,15 @@ public class Plateau {
     public int mNombre_colonne;
 	private ArrayList<ArrayList<String>> mPlatO;
 	private ArrayList<String> mColonne;
+	protected char m_symbole;
+	public String m_choixcase;
+	public int m_case;
    
 
     public Plateau (int pnombre_ligne, int pnombre_colonne) 
 	{
 		
-    
+    //construction du plateau
 		ArrayList<ArrayList<String>> mPlateau = new ArrayList<ArrayList<String>>(pnombre_colonne);
 		mPlatO = mPlateau;
 		
@@ -27,6 +30,8 @@ public class Plateau {
 				ArrayList<String> lColonne = new ArrayList<String>(pnombre_ligne);
 				mColonne = lColonne;
 				mPlateau.add(i, lColonne);
+				//a une case précise on écrit x en dur
+				
 				
 				if(i == 0 && j == 0)
 				{
@@ -35,72 +40,38 @@ public class Plateau {
 			
 				System.out.print(lColonne);
 				
-				
 			}
-		
 			
 		}
 		
-		
-		
-		//lColonne.add(i,new String("X"));
-		//mPlatO.set(mColonne,"X");
-	
-	//	ArrayList<ArrayList<String>> lColonne;
-		//mPlateau.set(1, "X");
-		//lColonne.set(1,"d");
-		
 	}
     
-   
+	public int caseUser(String p_choixcase) {
+		
+		return 1;
+	}
+	
+	public int affectationCase()
+	{
+		m_case = 0;
+		for (int i=0; i < mNombre_colonne; i++)
+		{
+			for (int j=0; j< mNombre_ligne; j++)
+			{
+				m_case += 1;
+			}
+		}
+		return m_case;
+	}
+	
+	String.valueOf( m_case );
     
-    
-    
-    
-    /*public void setCase(int p_index, char p_symbole)
-    {
-    	mPlatO.add(1, "")
-    }*/
-    /*public char getCase(){
-    	
-    	return
-    	System.out.println(mPlatO.get(p_index));
-    	
-    }*/
-    
-   /* public void setCase() {
-    	
-    }*/
-
 }	
 	
 		
 		
 		
-		
-		
-		
-		/*ArrayList<Character> tab2 = new ArrayList<Character>();
-		ArrayList<Character> tab3 = new ArrayList<Character>();
-		
-		plateau.add(' ');
-		tab2.add(' ');
-		tab3.add(' ');
-		
-		for (int i=1; i < mnombre_colonne;i++)
-		{
-			plateau.add(' ');
-			tab2.add(' ');
-			tab3.add(' ');
-		}
-		
-		
-		
-		System.out.println(tab1);
-		System.out.println(tab2);*/
-		//System.out.println(tab3);
-		
-		
+	
 	
 
 
